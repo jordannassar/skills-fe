@@ -1,0 +1,35 @@
+{
+  "name": "skillsapp",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "format": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "~1.17.3",
+    "@react-navigation/native": "^6.1.1",
+    "@react-navigation/native-stack": "^6.9.6",
+    "expo": "^47.0.13",
+    "expo-app-loading": "~2.1.1",
+    "expo-document-picker": "~11.0.1",
+    "expo-module-scripts": "^3.0.4",
+    "expo-status-bar": "~1.4.2",
+    "mime": "^3.0.0",
+    "native-notify": "^3.0.2",
+    "react": "18.1.0",
+    "react-native": "0.70.8",
+    "react-native-dotenv": "^3.4.8",
+    "react-native-select-dropdown": "^3.2.1",
+    "react-native-vector-icons": "^9.2.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "prettier": "^2.8.3"
+  },
+  "private": true
+}

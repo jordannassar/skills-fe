@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "SkillsApp",
+    "slug": "SkillsApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/skills.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/skills.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F1"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/skills.png",
+        "backgroundColor": "#FAF8F1"
+      }
+    },
+    "web": {
+      "favicon": "./assets/skills.png"
+    }
+  }
+}
