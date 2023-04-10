@@ -14,7 +14,7 @@ export default function GlobalFooter({ navigation }) {
         <Icon name="home" size={30} color="#CF6F5A" />
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('CreateOffer')} style={styles.item}>
+      <TouchableOpacity onPress={() => navigation.navigate('CreatePost')} style={styles.item}>
         <Icon name="plus-square-o" size={30} color="#CF6F5A" />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Account')} style={styles.item}>

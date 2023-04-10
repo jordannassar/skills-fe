@@ -18,6 +18,7 @@ export default function Home({ navigation, AppState }) {
   async function fetchAllPosts() {
     try {
       console.log('fetching');
+
       const response = await fetch(`http://${process.env.ip}:3001/api/post/get`, {
         method: 'GET',
         headers: {

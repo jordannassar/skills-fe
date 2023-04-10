@@ -32,7 +32,7 @@ const Login = ({ navigation }) => {
           body: JSON.stringify({ email, password }),
         });
 
-        console.log(response);
+        console.log(response.json());
         console.log(response.headers.get('session_token'));
         console.log(response.status);
         (await response.ok) && (await AsyncStorage.setItem('session_token', response.headers.get('session_token')));
@@ -49,11 +49,13 @@ const Login = ({ navigation }) => {
   };
 
   return isLoading ? (
-    <ActivityIndicator
-      size={48}
-      color="#CF6F5A"
-      style={{ marginTop: '65%', position: 'absolute', alignSelf: 'center' }}
-    />
+    <View style={{ height: '100%', width: '100%', backgroundColor: '#FAF8F1' }}>
+      <ActivityIndicator
+        size={48}
+        color="#CF6F5A"
+        style={{ marginTop: '65%', position: 'absolute', alignSelf: 'center' }}
+      />
+    </View>
   ) : (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome</Text>

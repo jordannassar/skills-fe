@@ -59,6 +59,7 @@ const Register = ({ navigation }) => {
       });
       console.log(response.ok);
       response.ok && AsyncStorage.setItem('session_token', response.headers.get('session_token'));
+      !response.ok &&setError('Something went wrong. Please try again.');
     } catch (error) {
       setError('Something went wrong. Please try again.');
     }

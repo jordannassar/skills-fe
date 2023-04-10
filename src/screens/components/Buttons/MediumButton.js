@@ -1,7 +1,7 @@
 import { View, Pressable, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-export const MediumButton = ({text, medBfunc}) => {
+export const MediumButton = ({ text, medBfunc }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => medBfunc()}>
@@ -19,10 +19,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     justifyContent: 'center',
     padding: 8,
+    width: 128,
   },
   button: {
-    width: 200,
-    height: 40,
+    width: 128,
+    height: 44,
     borderRadius: 2,
     backgroundColor: '#CF6F5A',
     paddingHorizontal: 32,

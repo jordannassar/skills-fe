@@ -8,7 +8,7 @@ import MediumButton from '../components/Buttons/MediumButton';
 
 export default function Account({ navigation, AppState }) {
   const [Error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); 
   const [user, setUser] = useState(null);
   const [bio, setBio] = useState(null);
   const [yearBorn, setYearBorn] = useState(null);
@@ -151,7 +151,7 @@ export default function Account({ navigation, AppState }) {
             <TouchableOpacity onPress={_pickImage}>
               <Image
                 source={{ uri: image ? image.uri : avatarUrl }}
-                style={{ height: 192, width: 192, marginVertical: 8, alignSelf: 'center' }}
+                style={{ height: 128, width: 128, marginVertical: 8, alignSelf: 'center' }}
                 resizeMode="contain"
               />
             </TouchableOpacity>
@@ -194,6 +194,7 @@ export default function Account({ navigation, AppState }) {
                 style={{ fontSize: 14, color: 'black', alignSelf: 'center' }}
                 value={bio}
                 onChangeText={setBio}
+                numberOfLines={4}
               />
             </View>
           </View>
